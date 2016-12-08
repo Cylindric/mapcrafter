@@ -1827,6 +1827,10 @@ RGBAImage IsometricBlockImages::createUnknownBlock() const {
 	RGBAImage texture(texture_size, texture_size);
 	texture.fill(rgba(255, 0, 0, 255), 0, 0, texture_size, texture_size);
 	return buildImage(BlockImage().setFace(util::binary<11111>::value, texture));
+
+        // Use a stone block instead of a bright red block
+	// const BlockTextures& textures = resources.getBlockTextures();
+	// return buildImage(BlockImage().setFace(util::binary<11111>::value, textures.STONE));
 }
 
 RGBAImage IsometricBlockImages::createBiomeBlock(uint16_t id, uint16_t data,
@@ -1872,6 +1876,36 @@ void IsometricBlockImages::createBlocks() {
 
 	const BlockTextures& t = resources.getBlockTextures();
 
+        // MATCHED BLOCKS
+        createBlock(1174, 16390, t.STONE); // Chisel Stone? The one around my doors.
+        createBlock(1174, 16391, t.COBBLESTONE); // Chisel Cobblestone - Celtic
+        createBlock(1175,     8, t.COBBLESTONE); // Chisel Cobblestone - Inset.
+        createBlock(1268, 32775, t.STONE); // Chisel Stone - Inset
+        createBlock(1646,     0, t.WOOL_COLORED_GREEN); // Rubber Tree Foliage
+        createBlock( 733, 16385, t.STONE); // Stone steps that I use.
+
+        createBlock( 276,     3, t.STONE); // Not sure - fairly deep, rare.
+        createBlock( 547,     0, t.BEDROCK); // Not sure - very rare.
+        createBlock( 988,     3, t.BEDROCK); // Not sure, can't see any of it.
+        createBlock( 994, 16384, t.BEDROCK); // Not sure, can't see any of it.
+        createBlock(1072,     4, t.DIRT); // Not sure -  Hammond's North-most block of crop SOIL
+        createBlock(1143,     7, t.STONE); // Not sure - Something deep, around lava. 
+        createBlock(1173,  8206, t.STONE); // Not sure - something around the top of Hammond's tower.
+        createBlock(1173, 16398, t.COBBLESTONE); // Not sure - the upper walls of Hammond's tower are made of this.
+        createBlock(1175,     1, t.STONE); // Not sure - the sone I built my water header-tank out of.
+        createBlock(1233,     7, t.STONE); // Not sure - all over.
+        createBlock(1236,     7, t.STONE); // Not sure - something mid-level. Really common.
+        createBlock(1243,     7, t.STONE); // Not sure. It's whatever Hammond has as the upper floor of his tower, and ceiling of the building.
+        createBlock(1316,     1, t.STONE); // Not sure - Rare, thinly spread.
+        createBlock(1316,     3, t.STONE); // Not sure - very rare.
+        createBlock(2132,     8, t.BEDROCK); // Not sure - Common in Hammond's area, but can't see any of it.
+        createBlock(2153,  8194, t.STONE); // Not sure - loads of it in my base though
+
+        createWood( 1318, 24576, t.LOG_OAK, t.LOG_OAK_TOP); // Not sure - Tree stumps for the trees around my grave. (most common)
+        createItemStyleBlock(1072, 5, t.WHEAT_STAGE_4); // Not sure -  Hammond's North-most block of crops
+        
+        
+        
 	createBlock(1, 0, t.STONE); // stone
 	createBlock(1, 1, t.STONE_GRANITE); // granite
 	createBlock(1, 2, t.STONE_GRANITE_SMOOTH); // polished granite
