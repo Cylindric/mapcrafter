@@ -11,6 +11,7 @@ Makefile
 !doc/Makefile
 
 *.o
+*.so
 *.a
 gmon.out
 
@@ -26,6 +27,7 @@ src/mapcrafter
 src/mapcrafter_export
 src/mapcrafter_markers
 src/mapcraftercore/version.cpp
+src/mapcraftercore/config.h
 test/html
 test/textures
 test/world
@@ -34,4 +36,5 @@ src/tools/assets
 src/tools/nbtdump
 src/tools/tex
 src/tools/testtextures
+src/tools/mapcraftertest
 src/tools/testconfig
