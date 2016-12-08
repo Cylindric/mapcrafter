@@ -16,3 +16,22 @@ gmon.out
 
 # OSX
 .DS_Store
+
+
+# NetBeans project files
+nbproject
+
+# Output Files
+src/mapcrafter
+src/mapcrafter_export
+src/mapcrafter_markers
+src/mapcraftercore/version.cpp
+test/html
+test/textures
+test/world
+test/mapcrafter.log
+src/tools/assets
+src/tools/nbtdump
+src/tools/tex
+src/tools/testtextures
+src/tools/testconfig
