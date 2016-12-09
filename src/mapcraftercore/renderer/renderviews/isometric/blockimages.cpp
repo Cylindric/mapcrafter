@@ -1877,35 +1877,64 @@ void IsometricBlockImages::createBlocks() {
 	const BlockTextures& t = resources.getBlockTextures();
 
         // MATCHED BLOCKS
+				createBlock( 733, 16385, t.STONE); // Stone steps that I use.
+				createGlass( 967, 24576, t.GLASS); // Clear White Stained Glass.
+				createGlass( 967,  8192, t.GLASS); // Clear White Stained Glass.
+				createGlass( 967, 16384, t.GLASS); // Clear White Stained Glass.
+				createGlass( 967, 32768, t.GLASS); // Clear White Stained Glass.
+				createBlock(1143,     7, t.OBSIDIAN); // Bassalt
         createBlock(1174, 16390, t.STONE); // Chisel Stone? The one around my doors.
         createBlock(1174, 16391, t.COBBLESTONE); // Chisel Cobblestone - Celtic
-        createBlock(1175,     8, t.COBBLESTONE); // Chisel Cobblestone - Inset.
-        createBlock(1268, 32775, t.STONE); // Chisel Stone - Inset
-        createBlock(1646,     0, t.WOOL_COLORED_GREEN); // Rubber Tree Foliage
-        createBlock( 733, 16385, t.STONE); // Stone steps that I use.
+				createBlock(1175,     1, t.COBBLESTONE); // Chisel Cobblestone bricks  - the sone I built my water header-tank out of.
+				createBlock(1175,     8, t.COBBLESTONE); // Chisel Cobblestone - Inset.
+				createBlock(1268, 32775, t.STONE); // Chisel Stone - Inset
+        createBlock(1646,     0, t.WOOL_COLORED_GREEN); // Apple Oak Tree Foliage
+				createBlock(1317,     4, t.WOOL_COLORED_GREEN); // Rubber Tree foaliage.
+				createBlock(2132,     9, t.WOOL_COLORED_WHITE); // Quarried Stone
 
+
+				createBlock( 233, 24576, t.DIRT); //createItemStyleBlock(233, 24576, t.FLOWER_ALLIUM); // Infrequent surface block. A plant of some sort.
+				createBlock( 233, 24577, t.DIRT); //createItemStyleBlock(233, 24576, t.FLOWER_ALLIUM); // Infrequent surface block. A plant of some sort.
+				createBlock( 233, 24578, t.DIRT); //createItemStyleBlock(233, 24576, t.FLOWER_ALLIUM); // Infrequent surface block. A plant of some sort.
+				createBlock( 233, 24579, t.DIRT); //createItemStyleBlock(233, 24576, t.FLOWER_ALLIUM); // Infrequent surface block. A plant of some sort.
+				createBlock( 233,   233, t.DIRT); //createItemStyleBlock(233, 24576, t.FLOWER_ALLIUM); // Infrequent surface block. A plant of some sort.
+				createBlock( 298, 24576, t.DIRT); // Infrequent surface block. A plant of some sort.
+				createBlock( 298, 24577, t.DIRT); // Infrequent surface block. A plant of some sort.
+				createBlock( 298, 24579, t.DIRT); // Infrequent surface block. A plant of some sort.
+
+				createBlock( 977,     1, t.COBBLESTONE); // Not sure, can't see any of it.
+				createBlock(1235, 32768, t.COBBLESTONE); // Not sure, can't see any of it.
+
+				createBlock(1175,     7, t.STONE); // Jag path near end
+				createBlock(1244,  8194, t.PLANKS_OAK); // Jag wooden roof
+				createBlock(1275,  24591, t.STONE); // Jag dome base
+				createBlock(1175, 32775, t.STONE); // Jag path
         createBlock( 276,     3, t.STONE); // Not sure - fairly deep, rare.
         createBlock( 547,     0, t.BEDROCK); // Not sure - very rare.
-        createBlock( 988,     3, t.BEDROCK); // Not sure, can't see any of it.
+				createBlock( 975,     0, t.BEDROCK); // Not sure, can't see any of it.
+				createBlock( 975,     1, t.BEDROCK); // Not sure, can't see any of it.
+				createBlock( 976,     1, t.WOOL_COLORED_LIME); // Floating Slime island blocks. (East of main base)
+				createBlock( 976,     2, t.WOOL_COLORED_LIME); // Floating Slime island blocks. (South of main base)
+				createBlock( 988,     3, t.BEDROCK); // Not sure, can't see any of it.
         createBlock( 994, 16384, t.BEDROCK); // Not sure, can't see any of it.
-        createBlock(1072,     4, t.DIRT); // Not sure -  Hammond's North-most block of crop SOIL
-        createBlock(1143,     7, t.STONE); // Not sure - Something deep, around lava. 
+				createBlock(1052,     0, t.WOOL_COLORED_LIME); // Floating Slime islands. (Centre core of each one)
+				createBlock(1072,     4, t.DIRT); // Not sure -  Hammond's North-most block of crop SOIL
         createBlock(1173,  8206, t.STONE); // Not sure - something around the top of Hammond's tower.
         createBlock(1173, 16398, t.COBBLESTONE); // Not sure - the upper walls of Hammond's tower are made of this.
-        createBlock(1175,     1, t.STONE); // Not sure - the sone I built my water header-tank out of.
         createBlock(1233,     7, t.STONE); // Not sure - all over.
         createBlock(1236,     7, t.STONE); // Not sure - something mid-level. Really common.
         createBlock(1243,     7, t.STONE); // Not sure. It's whatever Hammond has as the upper floor of his tower, and ceiling of the building.
         createBlock(1316,     1, t.STONE); // Not sure - Rare, thinly spread.
         createBlock(1316,     3, t.STONE); // Not sure - very rare.
-        createBlock(2132,     8, t.BEDROCK); // Not sure - Common in Hammond's area, but can't see any of it.
-        createBlock(2153,  8194, t.STONE); // Not sure - loads of it in my base though
+				createBlock(1380,     0, t.STONE); // Not sure, can't see any of it.
+				createBlock(2132,     8, t.BEDROCK); // Not sure - Common in Hammond's area, but can't see any of it.
+				createBlock(2153,  8194, t.STONE); // Not sure - loads of it in my base though
 
         createWood( 1318, 24576, t.LOG_OAK, t.LOG_OAK_TOP); // Not sure - Tree stumps for the trees around my grave. (most common)
         createItemStyleBlock(1072, 5, t.WHEAT_STAGE_4); // Not sure -  Hammond's North-most block of crops
-        
-        
-        
+
+
+
 	createBlock(1, 0, t.STONE); // stone
 	createBlock(1, 1, t.STONE_GRANITE); // granite
 	createBlock(1, 2, t.STONE_GRANITE_SMOOTH); // polished granite
