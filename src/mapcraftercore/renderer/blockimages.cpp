@@ -304,7 +304,7 @@ bool AbstractBlockImages::isBlockTransparent(uint16_t id, uint16_t data) const {
 
 bool AbstractBlockImages::hasBlock(uint16_t id, uint16_t data) const {
     if (block_images.count(id | (data << 16)) == 0) {
-           LOG(INFO) << "AbstractBlockImages::hasBlock no block for " << id << " " << data;
+           LOG(DEBUG) << "AbstractBlockImages::hasBlock no block for " << id << " " << data;
     }
 	return block_images.count(id | (data << 16)) != 0;
 }
