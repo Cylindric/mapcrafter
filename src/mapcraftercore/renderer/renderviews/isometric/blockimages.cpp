@@ -1876,62 +1876,379 @@ void IsometricBlockImages::createBlocks() {
 
 	const BlockTextures& t = resources.getBlockTextures();
 
-        // MATCHED BLOCKS
-				createBlock( 733, 16385, t.STONE); // Stone steps that I use.
-				createGlass( 967, 24576, t.GLASS); // Clear White Stained Glass.
-				createGlass( 967,  8192, t.GLASS); // Clear White Stained Glass.
-				createGlass( 967, 16384, t.GLASS); // Clear White Stained Glass.
-				createGlass( 967, 32768, t.GLASS); // Clear White Stained Glass.
-				createBlock(1143,     7, t.OBSIDIAN); // Bassalt
-        createBlock(1174, 16390, t.STONE); // Chisel Stone? The one around my doors.
-        createBlock(1174, 16391, t.COBBLESTONE); // Chisel Cobblestone - Celtic
-				createBlock(1175,     1, t.COBBLESTONE); // Chisel Cobblestone bricks  - the sone I built my water header-tank out of.
-				createBlock(1175,     8, t.COBBLESTONE); // Chisel Cobblestone - Inset.
-				createBlock(1268, 32775, t.STONE); // Chisel Stone - Inset
-        createBlock(1646,     0, t.WOOL_COLORED_GREEN); // Apple Oak Tree Foliage
-				createBlock(1317,     4, t.WOOL_COLORED_GREEN); // Rubber Tree foaliage.
-				createBlock(2132,     9, t.WOOL_COLORED_WHITE); // Quarried Stone
+	// MATCHED BLOCKS
+	createWood( 1318, 24576, t.LOG_OAK, t.LOG_OAK_TOP); // Not sure - Tree stumps for the trees around my grave. (most common)
+	createItemStyleBlock(1072, 5, t.WHEAT_STAGE_4); // Not sure -  Hammond's North-most block of crops
 
-
-				createBlock( 233, 24576, t.DIRT); //createItemStyleBlock(233, 24576, t.FLOWER_ALLIUM); // Infrequent surface block. A plant of some sort.
-				createBlock( 233, 24577, t.DIRT); //createItemStyleBlock(233, 24576, t.FLOWER_ALLIUM); // Infrequent surface block. A plant of some sort.
-				createBlock( 233, 24578, t.DIRT); //createItemStyleBlock(233, 24576, t.FLOWER_ALLIUM); // Infrequent surface block. A plant of some sort.
-				createBlock( 233, 24579, t.DIRT); //createItemStyleBlock(233, 24576, t.FLOWER_ALLIUM); // Infrequent surface block. A plant of some sort.
-				createBlock( 233,   233, t.DIRT); //createItemStyleBlock(233, 24576, t.FLOWER_ALLIUM); // Infrequent surface block. A plant of some sort.
-				createBlock( 298, 24576, t.DIRT); // Infrequent surface block. A plant of some sort.
-				createBlock( 298, 24577, t.DIRT); // Infrequent surface block. A plant of some sort.
-				createBlock( 298, 24579, t.DIRT); // Infrequent surface block. A plant of some sort.
-
-				createBlock( 977,     1, t.COBBLESTONE); // Not sure, can't see any of it.
-				createBlock(1235, 32768, t.COBBLESTONE); // Not sure, can't see any of it.
-
-				createBlock(1175,     7, t.STONE); // Jag path near end
-				createBlock(1244,  8194, t.PLANKS_OAK); // Jag wooden roof
-				createBlock(1275,  24591, t.STONE); // Jag dome base
-				createBlock(1175, 32775, t.STONE); // Jag path
-        createBlock( 276,     3, t.STONE); // Not sure - fairly deep, rare.
-        createBlock( 547,     0, t.BEDROCK); // Not sure - very rare.
-				createBlock( 975,     0, t.BEDROCK); // Not sure, can't see any of it.
-				createBlock( 975,     1, t.BEDROCK); // Not sure, can't see any of it.
-				createBlock( 976,     1, t.WOOL_COLORED_LIME); // Floating Slime island blocks. (East of main base)
-				createBlock( 976,     2, t.WOOL_COLORED_LIME); // Floating Slime island blocks. (South of main base)
-				createBlock( 988,     3, t.BEDROCK); // Not sure, can't see any of it.
-        createBlock( 994, 16384, t.BEDROCK); // Not sure, can't see any of it.
-				createBlock(1052,     0, t.WOOL_COLORED_LIME); // Floating Slime islands. (Centre core of each one)
-				createBlock(1072,     4, t.DIRT); // Not sure -  Hammond's North-most block of crop SOIL
-        createBlock(1173,  8206, t.STONE); // Not sure - something around the top of Hammond's tower.
-        createBlock(1173, 16398, t.COBBLESTONE); // Not sure - the upper walls of Hammond's tower are made of this.
-        createBlock(1233,     7, t.STONE); // Not sure - all over.
-        createBlock(1236,     7, t.STONE); // Not sure - something mid-level. Really common.
-        createBlock(1243,     7, t.STONE); // Not sure. It's whatever Hammond has as the upper floor of his tower, and ceiling of the building.
-        createBlock(1316,     1, t.STONE); // Not sure - Rare, thinly spread.
-        createBlock(1316,     3, t.STONE); // Not sure - very rare.
-				createBlock(1380,     0, t.STONE); // Not sure, can't see any of it.
-				createBlock(2132,     8, t.BEDROCK); // Not sure - Common in Hammond's area, but can't see any of it.
-				createBlock(2153,  8194, t.STONE); // Not sure - loads of it in my base though
-
-        createWood( 1318, 24576, t.LOG_OAK, t.LOG_OAK_TOP); // Not sure - Tree stumps for the trees around my grave. (most common)
-        createItemStyleBlock(1072, 5, t.WHEAT_STAGE_4); // Not sure -  Hammond's North-most block of crops
+	// createBlock(69,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(69,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(69,6, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(69,9, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(69,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(69,14, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(77,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(177,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(177,3, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(222,24581, t.TORCH_ON); // Tiny Torch
+	// createBlock(222,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(224,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(227,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(230,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(230,0, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(233, 233, t.DIRT); //createItemStyleBlock(233, 24576, t.FLOWER_ALLIUM); // Infrequent surface block. A plant of some sort.
+	//createBlock(233,0, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(233, 24576, t.DIRT); //createItemStyleBlock(233, 24576, t.FLOWER_ALLIUM); // Infrequent surface block. A plant of some sort.
+	createBlock(233, 24577, t.DIRT); //createItemStyleBlock(233, 24576, t.FLOWER_ALLIUM); // Infrequent surface block. A plant of some sort.
+	createBlock(233, 24578, t.DIRT); //createItemStyleBlock(233, 24576, t.FLOWER_ALLIUM); // Infrequent surface block. A plant of some sort.
+	createBlock(233, 24579, t.DIRT); //createItemStyleBlock(233, 24576, t.FLOWER_ALLIUM); // Infrequent surface block. A plant of some sort.
+	// createBlock(234,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(234,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(237,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(238,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(254,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(254,11, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(257,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(257,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(257,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(257,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(261,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(268,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(268,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(269,1, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(271,7, t.WHEAT_STAGE_1); // Rice
+	// createBlock(271,3, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(272,7, t.WHEAT_STAGE_3); // Canola
+	// createBlock(272,6, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(272,4, t.WHEAT_STAGE_5); // Canola
+	// createBlock(272,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(272,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(272,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(272,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(272,5, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(273,7, t.WHEAT_STAGE_4); // Flax.
+	// createBlock(274,7, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(276, 3, t.BEDROCK); // Unknown Block - mid level ore.
+	// createBlock(281,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(283,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(286,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(290,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(298,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(298,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(298,1, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(298, 24576, t.DIRT); // Infrequent surface block. A plant of some sort.
+	createBlock(298, 24577, t.DIRT); // Infrequent surface block. A plant of some sort.
+	createBlock(298, 24579, t.DIRT); // Infrequent surface block. A plant of some sort.
+	// createBlock(298,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(312,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(312,14, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(312,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(312,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(312,15, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(312,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(312,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(312,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(312,6, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(312,7, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(312,8, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(312,9, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(312,12, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(312,11, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(312,10, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(312,13, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(313,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(364,13, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(364,12, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(364,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(364,9, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(364,7, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(364,6, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(364,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(364,15, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(366,15, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(366,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(366,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(366,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(366,8, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(366,9, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(366,7, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(366,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(366,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(366,11, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(366,12, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(366,13, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(367,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(367,6, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(367,7, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(367,12, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(367,14, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(367,15, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(547, 0, t.BEDROCK); // Unknown Block - fairly rare but shallow ore
+	// createBlock(548,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(561,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(566,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(568,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(576,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(582,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(584,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(606,0, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(733,0, t.STONE); // Stone steps.
+	createBlock(733,1, t.STONE); // Stone steps
+	createBlock(733,2, t.STONE); // Stone steps.
+	createBlock(733,3, t.STONE); // Stone steps.
+	createBlock(733, 16385, t.STONE); // Stone steps.
+	// createBlock(789,8, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(789,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(789,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(789,11, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(804,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(804,7, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(809,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(809,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(809,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(809,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(810,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(810,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(810,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(810,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(818,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(962,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(962,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(966,0, t.WOOL_COLORED_RED); // Unknown Block
+	createGlass(967,0, t.GLASS); // Clear White Stained Glass.
+	createGlass(967, 8192, t.GLASS); // Clear White Stained Glass.
+	createGlass(967, 16384, t.GLASS); // Clear White Stained Glass.
+	createGlass(967, 24576, t.GLASS); // Clear White Stained Glass.
+	createGlass(967, 32768, t.GLASS); // Clear White Stained Glass.
+	// createBlock(975, 0, t.WOOL_COLORED_RED); // Not sure, can't see any of it.
+	// createBlock(975, 1, t.WOOL_COLORED_RED); // Not sure, can't see any of it.
+	createBlock(976, 1, t.WOOL_COLORED_LIME); // Floating Slime island blocks. (East of main base)
+	createBlock(976, 2, t.WOOL_COLORED_LIME); // Floating Slime island blocks. (South of main base)
+	// createBlock(977, 1, t.COBBLESTONE); // Not sure, can't see any of it.
+	// createBlock(977,9, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(978,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(978,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(980,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(980,11, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(980,12, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(980,13, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(980,14, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(980,15, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(980,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(980,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(980,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(980,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(980,6, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(980,7, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(980,8, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(980,9, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(981,7, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(981,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(981,11, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(981,12, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(981,13, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(981,14, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(981,15, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(981,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(981,6, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(981,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(981,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(981,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(981,9, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(981,8, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(982,7, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(982,9, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(982,8, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(982,6, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(982,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(982,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(982,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(982,15, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(982,14, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(982,13, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(982,12, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(982,11, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(982,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(983,10, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(983,12, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(983,13, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(983,14, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(983,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(983,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(983,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(983,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(983,6, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(983,7, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(983,8, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(983,9, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(983,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(986,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(986,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(986,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(986,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(986,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(986,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(987,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(988,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(988, 3, t.WOOL_COLORED_RED); // Not sure, can't see any of it.
+	// createBlock(991,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(991,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(992,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(993,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(994, 16384, t.WOOL_COLORED_RED); // Not sure, can't see any of it.
+	// createBlock(1011,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1011,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1011,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1011,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1014,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1014,6, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1014,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1014,8, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1052, 0, t.WOOL_COLORED_LIME); // Floating Slime islands. (Centre core of each one)
+	// createBlock(1052,1, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1054,4, t.BEDROCK); // Unknown Block - rare deep ore.
+	createBlock(1054,3, t.BEDROCK); // Unknown Block - rare mid-depth ore.
+	createWood(1054, 1, t.LOG_OAK, t.LOG_OAK_TOP); // Rubber tree trunk
+	createBlock(1057,4, t.BEDROCK); // Unknown Block - Edge of Jag water area
+	// createBlock(1059,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1071,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1072, 4, t.DIRT); // Not sure - Hammond's North-most block of crop SOIL
+	// createBlock(1080,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1080,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1082,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1142,6, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1143, 7, t.OBSIDIAN); // Bassalt
+	// createBlock(1143,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1173,6, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1173,1, t.BEDROCK); // Unknown Block - Lower walls of the JagWindmill
+	// createBlock(1173,11, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1173,14, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1173,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1173, 8206, t.STONE); // Not sure - something around the top of Hammond's tower.
+	// createBlock(1173, 16398, t.COBBLESTONE); // Not sure - the upper walls of Hammond's tower are made of this.
+	// createBlock(1173,4, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1174, 16390, t.STONE); // Chisel Stone Column.
+	createBlock(1174, 16391, t.COBBLESTONE); // Chisel Cobblestone - Celtic.
+	createBlock(1174, 6, t.COBBLESTONE); // Chisle Cobblestone - Columns.
+	createBlock(1174, 7, t.COBBLESTONE); // Chisel Cobblestone - Celtic
+	createBlock(1174,0, t.COBBLESTONE); // Chisel Cobblestone - Mosaic
+	// createBlock(1174,5, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1175, 1, t.COBBLESTONE); // Chisel Cobblestone bricks - the sone I built my water header-tank out of.
+	createBlock(1175, 8, t.COBBLESTONE); // Chisel Cobblestone - Inset.
+	// createBlock(1175,3, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1175, 7, t.STONE); // Jag path near end
+	// createBlock(1175,9, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1175, 32775, t.STONE); // Jag path
+	// createBlock(1191,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1191,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1194,12, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1211,8, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1217,2, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1233, 7, t.BEDROCK); // Unknown Block - something mid-level. Really common.
+	// createBlock(1234,7, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1234,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1234,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1235, 32768, t.COBBLESTONE); // Not sure, can't see any of it.
+	createBlock(1235,0, t.WOOL_COLORED_WHITE); // Chisel Marble - Mosaic (Piercy's base)
+	// createBlock(1236,1, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1236, 7, t.BEDROCK); // Unknown Block - something mid-level. Really common.
+	// createBlock(1237,9, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1242,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1243, 7, t.STONE); // Not sure. It's whatever Hammond has as the upper floor of his tower, and ceiling of the building.
+	// createBlock(1243,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1243,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1244, 8194, t.PLANKS_OAK); // Jag wooden roof
+	// createBlock(1244,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1258,7, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1268, 32775, t.STONE); // Chisel Stone - Inset
+	// createBlock(1268,6, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1268,7, t.COBBLESTONE); // Unknown Block - Chisel something
+	// createBlock(1270,3, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1275, 24591, t.BEDROCK); // Jag dome base (some fancy alloy)
+	// createBlock(1275,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1275,15, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1299,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1299,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1301,0, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1302,0, t.STONEBRICK); // Unknown Block - top of Piercy tower
+	// createBlock(1315,0, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1316, 3, t.BEDROCK); // Not sure - fairly rare deep block
+	createBlock(1316, 1, t.BEDROCK); // Unknown Block - something mid-level. Really common.
+	createBlock(1316,2, t.BEDROCK); // Unknown Block - deep ore.
+	createBlock(1316,4, t.BEDROCK); // Unknown Block - deep ore
+	createBlock(1317, 4, t.WOOL_COLORED_GREEN); // Rubber Tree foaliage.
+	// createBlock(1317,12, t.WOOL_COLORED_RED); // Unknown Block
+	createWood(1318, 0, t.LOG_OAK, t.LOG_OAK_TOP); // Rubber tree trunk
+	// createBlock(1318,8, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1318,7, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1318,10, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1318,9, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1326,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1327,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1327,8, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1350,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1379,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1379,2, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1380, 0, t.BEDROCK); // Unknown Block - Surface block, some visible West of waterfall behind my base
+	// createBlock(1385,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1385,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1385,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1385,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1385,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1394,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1401,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1426,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1426,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1429,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1430,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1432,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1432,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1432,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1645,0, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1646, 0, t.WOOL_COLORED_GREEN); // Apple Oak Tree Foliage
+	// createBlock(1646,8, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1657,0, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(1695,0, t.BEDROCK); // Unknown Block - deep ore
+	// createBlock(1700,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1715,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1752,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1754,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1754,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1766,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1767,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1768,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1768,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1769,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1770,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1775,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1782,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1789,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1806,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1820,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1835,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1839,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1852,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1856,15, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1857,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(1867,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(2122,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(2122,1, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(2122,3, t.WOOL_COLORED_RED); // Unknown Block
+	createBlock(2132, 8, t.BEDROCK); // Unknown Block - sphere of it below Piercy's base
+	createBlock(2132, 9, t.WOOL_COLORED_WHITE); // Quarried Stone
+	// createBlock(2149,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(2149,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(2149,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(2149,4, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(2153, 8194, t.STONE); // Not sure - loads of it in my base though
+	// createBlock(2153,0, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(2153,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(2189,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(2202,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(2204,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(2205,5, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(2246,3, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(2274,2, t.WOOL_COLORED_RED); // Unknown Block
+	// createBlock(2274,5, t.WOOL_COLORED_RED); // Unknown Block
 
 
 
