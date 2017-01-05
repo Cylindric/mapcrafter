@@ -1950,11 +1950,17 @@ void IsometricBlockImages::createBlocks() {
 	createBlock(1217,     2, t.STONEBRICK); // Unknown Block - Floor of Hammond's hut.
 	createBlock(1233,     7, t.BEDROCK); // Unknown Block - something mid-level. Really common.
 	createBlock(1234,     1, t.WOOL_COLORED_WHITE); // Chisel Marble
-	createBlock(1235,     0, t.WOOL_COLORED_WHITE); // Chisel Marble - Mosaic (Piercy's base)
+	createBlock(1234,     4, t.BEDROCK); // Unknown Block - lots in MegaBase2
+	createBlock(1234,    12, t.WOOL_COLORED_WHITE); // Chisel Marble - French1
+	createBlock(1234,     4, t.BEDROCK); // Unknown Block - lots in MegaBase2
+	createBlock(1234, 32775, t.WOOL_COLORED_WHITE); // Chisel Marble - Not sure - MegaBase2 ceilings
+	createBlock(1234, 32779, t.WOOL_COLORED_WHITE); // Chisel Marble - Not sure - my top floor's ceiling
+	createBlock(1235,     0, t.WOOL_COLORED_WHITE); // Chisel Marble - Mosaic
 	createBlock(1235,     2, t.WOOL_COLORED_WHITE); // Chisel Marble - The one I have in my room
 	createBlock(1235,  8194, t.WOOL_COLORED_WHITE); // Chisel Marble - The one I have in my room
 	createBlock(1235, 16386, t.WOOL_COLORED_WHITE); // Chisel Marble - The one I have in my room
-	createBlock(1236,     7, t.BEDROCK); // Unknown Block - something mid-level. Really common.
+	createBlock(1237,     3, t.WOOL_COLORED_WHITE); // Chisel Column - The one I have as my Base2 walls
+	createBlock(1236,     7, t.WOOL_COLORED_WHITE); // Chisel Marble - Raw
 	createBlock(1243,     7, t.PLANKS_OAK); // Unknown Block. It's whatever Hammond has as the floor of the upper floor of his tower, and ceiling of the building.
 	createBlock(1243,    11, t.PLANKS_OAK); // Unknown Block - From Renwick's tower.
 	createBlock(1243,  8203, t.PLANKS_OAK); // Chisel Oak Planks
@@ -1994,6 +2000,7 @@ void IsometricBlockImages::createBlocks() {
 	createBlock(1856, 24591, t.COBBLESTONE); // Unknown Block Vertical conduit I use for water
 	createBlock(2132,     8, t.BEDROCK); // Unknown Block - sphere of it below Piercy's base
 	createBlock(2132,     9, t.WOOL_COLORED_WHITE); // Quarried Stone
+	createBlock(2149,     5, t.BEDROCK); // Unknown Block - lots in MegaBase2
 	// createBlock(2153, 8194, t.STONE); // Not sure - loads of it in my base though
 
 
